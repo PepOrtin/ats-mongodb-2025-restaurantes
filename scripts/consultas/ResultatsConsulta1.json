@@ -1,0 +1,325 @@
+[{
+  "_id": {
+    "$oid": "55f14312c7447c3da7051b2c"
+  },
+  "URL": "http://www.just-eat.co.uk/restaurants-042-restaurant-e11/menu",
+  "address": "885 High Road Leytonstone",
+  "address line 2": "London",
+  "name": "042 Restaurant & Bar",
+  "outcode": "E11",
+  "postcode": "1HR",
+  "rating": 3,
+  "type_of_food": "African"
+},
+{
+  "_id": {
+    "$oid": "55f14312c7447c3da7051b2d"
+  },
+  "URL": "http://www.just-eat.co.uk/restaurants-042-restaurant-e11/menu",
+  "address": "885 High Road Leytonstone",
+  "address line 2": "London",
+  "name": "042 Restaurant & Bar",
+  "outcode": "E11",
+  "postcode": "1HR",
+  "rating": 3,
+  "type_of_food": "African"
+},
+{
+  "_id": {
+    "$oid": "55f14312c7447c3da7051b2e"
+  },
+  "URL": "http://www.just-eat.co.uk/restaurants-042-restaurant-e11/menu",
+  "address": "885 High Road Leytonstone",
+  "address line 2": "London",
+  "name": "042 Restaurant & Bar",
+  "outcode": "E11",
+  "postcode": "1HR",
+  "rating": 3,
+  "type_of_food": "African"
+},
+{
+  "_id": {
+    "$oid": "55f14312c7447c3da7051b4b"
+  },
+  "URL": "http://www.just-eat.co.uk/restaurants-280degreesafrican-nw6/menu",
+  "address": "280 Kilburn High Road",
+  "address line 2": "London",
+  "name": "280 Degrees African & Nigerian Restaurant",
+  "outcode": "NW6",
+  "postcode": "2BY",
+  "rating": 2.5,
+  "type_of_food": "African"
+},
+{
+  "_id": {
+    "$oid": "55f14312c7447c3da7051ba1"
+  },
+  "URL": "http://www.just-eat.co.uk/restaurants-eko-food-market-charton/menu",
+  "address": "Unit 5 Meridan Estate",
+  "address line 2": "London",
+  "name": "èkó Food Market",
+  "outcode": "SE7",
+  "postcode": "7SJ",
+  "rating": 4,
+  "type_of_food": "African"
+},
+{
+  "_id": {
+    "$oid": "55f14312c7447c3da7051ba2"
+  },
+  "URL": "http://www.just-eat.co.uk/restaurants-eko-food-market-charton/menu",
+  "address": "Unit 5 Meridan Estate",
+  "address line 2": "London",
+  "name": "èkó Food Market",
+  "outcode": "SE7",
+  "postcode": "7SJ",
+  "rating": 4,
+  "type_of_food": "African"
+},
+{
+  "_id": {
+    "$oid": "55f14312c7447c3da7051c76"
+  },
+  "URL": "http://www.just-eat.co.uk/restaurants-afritopia-so14/menu",
+  "address": "127 St. Mary Street",
+  "address line 2": "Hampshire",
+  "name": "Afritopia - African Restaurant with Style",
+  "outcode": "SO14",
+  "postcode": "1PG",
+  "rating": 4,
+  "type_of_food": "African"
+},
+{
+  "_id": {
+    "$oid": "55f14312c7447c3da7051bf0"
+  },
+  "URL": "http://www.just-eat.co.uk/restaurants-abidap-connection-croydon/menu",
+  "address": "89 Lower Addiscombe Road",
+  "address line 2": "Croydon",
+  "name": "Abidap Connection",
+  "outcode": "CR0",
+  "postcode": "6PT",
+  "rating": 5,
+  "type_of_food": "African"
+},
+{
+  "_id": {
+    "$oid": "55f14312c7447c3da7051bf1"
+  },
+  "URL": "http://www.just-eat.co.uk/restaurants-abidap-connection-croydon/menu",
+  "address": "89 Lower Addiscombe Road",
+  "address line 2": "Croydon",
+  "name": "Abidap Connection",
+  "outcode": "CR0",
+  "postcode": "6PT",
+  "rating": 5,
+  "type_of_food": "African"
+},
+{
+  "_id": {
+    "$oid": "55f14312c7447c3da7051b4c"
+  },
+  "URL": "http://www.just-eat.co.uk/restaurants-280degreesafrican-nw6/menu",
+  "address": "280 Kilburn High Road",
+  "address line 2": "London",
+  "name": "280 Degrees African & Nigerian Restaurant",
+  "outcode": "NW6",
+  "postcode": "2BY",
+  "rating": 2.5,
+  "type_of_food": "African"
+},
+{
+  "_id": {
+    "$oid": "55f14312c7447c3da7051bef"
+  },
+  "URL": "http://www.just-eat.co.uk/restaurants-abidap-connection-croydon/menu",
+  "address": "89 Lower Addiscombe Road",
+  "address line 2": "Croydon",
+  "name": "Abidap Connection",
+  "outcode": "CR0",
+  "postcode": "6PT",
+  "rating": 5,
+  "type_of_food": "African"
+},
+{
+  "_id": {
+    "$oid": "55f14312c7447c3da7051c72"
+  },
+  "URL": "http://www.just-eat.co.uk/restaurants-africa9jarestaurant-l7/menu",
+  "address": "135 Prescott Road",
+  "address line 2": "Liverpool",
+  "name": "Africa 9JA Restaurant",
+  "outcode": "L7",
+  "postcode": "0LB",
+  "rating": 4.5,
+  "type_of_food": "African"
+},
+{
+  "_id": {
+    "$oid": "55f14312c7447c3da7051c73"
+  },
+  "URL": "http://www.just-eat.co.uk/restaurants-africabestplace-m8/menu",
+  "address": "491 Cheetham Hill Road",
+  "address line 2": "Manchester",
+  "name": "Africa Best Place",
+  "outcode": "M8",
+  "postcode": "9HJ",
+  "rating": 2.5,
+  "type_of_food": "African"
+},
+{
+  "_id": {
+    "$oid": "55f14312c7447c3da7051c74"
+  },
+  "URL": "http://www.just-eat.co.uk/restaurants-africabestplace-m8/menu",
+  "address": "491 Cheetham Hill Road",
+  "address line 2": "Manchester",
+  "name": "Africa Best Place",
+  "outcode": "M8",
+  "postcode": "9HJ",
+  "rating": 2.5,
+  "type_of_food": "African"
+},
+{
+  "_id": {
+    "$oid": "55f14312c7447c3da7051c75"
+  },
+  "URL": "http://www.just-eat.co.uk/restaurants-africa-flavour-eh6/menu",
+  "address": "187 Great Junction Street",
+  "address line 2": "Edinburgh",
+  "name": "African Flavour",
+  "outcode": "EH6",
+  "postcode": "5LQ",
+  "rating": 4,
+  "type_of_food": "African"
+},
+{
+  "_id": {
+    "$oid": "55f14312c7447c3da7051c71"
+  },
+  "URL": "http://www.just-eat.co.uk/restaurants-africa9jarestaurant-l7/menu",
+  "address": "135 Prescott Road",
+  "address line 2": "Liverpool",
+  "name": "Africa 9JA Restaurant",
+  "outcode": "L7",
+  "postcode": "0LB",
+  "rating": 4.5,
+  "type_of_food": "African"
+},
+{
+  "_id": {
+    "$oid": "55f14312c7447c3da7051ce5"
+  },
+  "URL": "http://www.just-eat.co.uk/restaurants-akwaahskitchen-n17/menu",
+  "address": "22 Lordship Lane",
+  "address line 2": "London",
+  "name": "Akwaahs Kitchen",
+  "outcode": "N17",
+  "postcode": "6RU",
+  "rating": 2.5,
+  "type_of_food": "African"
+},
+{
+  "_id": {
+    "$oid": "55f14312c7447c3da7051ce7"
+  },
+  "URL": "http://www.just-eat.co.uk/restaurants-akwaahskitchen-n17/menu",
+  "address": "22 Lordship Lane",
+  "address line 2": "London",
+  "name": "Akwaahs Kitchen",
+  "outcode": "N17",
+  "postcode": "6RU",
+  "rating": 2.5,
+  "type_of_food": "African"
+},
+{
+  "_id": {
+    "$oid": "55f14312c7447c3da7051d35"
+  },
+  "URL": "http://www.just-eat.co.uk/restaurants-alaowerrirestaurant-se14/menu",
+  "address": "129 New Cross Road",
+  "address line 2": "London",
+  "name": "Alaowerri Restaurant",
+  "outcode": "SE14",
+  "postcode": "5DJ",
+  "rating": 1,
+  "type_of_food": "African"
+},
+{
+  "_id": {
+    "$oid": "55f14312c7447c3da7051f89"
+  },
+  "URL": "http://www.just-eat.co.uk/restaurants-ariya-bd7/menu",
+  "address": "34 Great Horton Road",
+  "address line 2": "West Yorkshire",
+  "name": "Ariya Restaurant & Bar",
+  "outcode": "BD7",
+  "postcode": "1AL",
+  "rating": 4,
+  "type_of_food": "African"
+},
+{
+  "_id": {
+    "$oid": "55f14312c7447c3da7051f88"
+  },
+  "URL": "http://www.just-eat.co.uk/restaurants-ariya-bd7/menu",
+  "address": "34 Great Horton Road",
+  "address line 2": "West Yorkshire",
+  "name": "Ariya Restaurant & Bar",
+  "outcode": "BD7",
+  "postcode": "1AL",
+  "rating": 4,
+  "type_of_food": "African"
+},
+{
+  "_id": {
+    "$oid": "55f14313c7447c3da70521ca"
+  },
+  "URL": "http://www.just-eat.co.uk/restaurants-bankeskitchen-n16/menu",
+  "address": "11 Bradbury Street",
+  "address line 2": "London",
+  "name": "Banke's Kitchen Nigerian Cuisine -",
+  "outcode": "N16",
+  "postcode": "8JN",
+  "rating": 4.5,
+  "type_of_food": "African"
+},
+{
+  "_id": {
+    "$oid": "55f14313c7447c3da70521c9"
+  },
+  "URL": "http://www.just-eat.co.uk/restaurants-bankeskitchen-n16/menu",
+  "address": "11 Bradbury Street",
+  "address line 2": "London",
+  "name": "Banke's Kitchen Nigerian Cuisine -",
+  "outcode": "N16",
+  "postcode": "8JN",
+  "rating": 4.5,
+  "type_of_food": "African"
+},
+{
+  "_id": {
+    "$oid": "55f14313c7447c3da70521c8"
+  },
+  "URL": "http://www.just-eat.co.uk/restaurants-bankeskitchen-n16/menu",
+  "address": "11 Bradbury Street",
+  "address line 2": "London",
+  "name": "Banke's Kitchen Nigerian Cuisine -",
+  "outcode": "N16",
+  "postcode": "8JN",
+  "rating": 4.5,
+  "type_of_food": "African"
+},
+{
+  "_id": {
+    "$oid": "55f14313c7447c3da705244f"
+  },
+  "URL": "http://www.just-eat.co.uk/restaurants-bibiscafe-m13/menu",
+  "address": "Imex Longside Business Park Hamilton Road",
+  "address line 2": "Manchester",
+  "name": "Bibis Cafe & African Restaurant",
+  "outcode": "M13",
+  "postcode": "0PD",
+  "rating": 4.5,
+  "type_of_food": "African"
+}]
