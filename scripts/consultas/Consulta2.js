@@ -7,4 +7,4 @@ use("Pràctica1");
 // Find a document in a collection.
 db.getCollection("inspections").find({
     result: 'Violation Issued'
-});
+}).sort({ date : 1});

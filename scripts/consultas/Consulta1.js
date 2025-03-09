@@ -8,5 +8,3 @@ use("Pràctica1");
 db.getCollection("restaurants").find({
     type_of_food: 'African'
 });
-
-

@@ -7,4 +7,4 @@ use("Pràctica1");
 // Find a document in a collection.
 db.getCollection("restaurants").find({
     rating: {$gte: 4}
-});
+}).sort({ rating: -1});
