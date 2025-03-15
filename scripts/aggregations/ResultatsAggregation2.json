@@ -1,0 +1,30 @@
+[{
+  "Total": 6370,
+  "resultado": "Warning Issued",
+  "TotalPorInspeciones": 1280,
+  "porcentaje": 20.09419152276295
+},
+{
+  "Total": 6370,
+  "resultado": "Violation Issued",
+  "TotalPorInspeciones": 1291,
+  "porcentaje": 20.266875981161693
+},
+{
+  "Total": 6370,
+  "resultado": "Pass",
+  "TotalPorInspeciones": 1259,
+  "porcentaje": 19.76452119309262
+},
+{
+  "Total": 6370,
+  "resultado": "Fail",
+  "TotalPorInspeciones": 1280,
+  "porcentaje": 20.09419152276295
+},
+{
+  "Total": 6370,
+  "resultado": "No Violation Issued",
+  "TotalPorInspeciones": 1260,
+  "porcentaje": 19.78021978021978
+}]
