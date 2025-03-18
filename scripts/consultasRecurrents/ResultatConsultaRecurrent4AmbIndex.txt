@@ -1,0 +1,152 @@
+{
+  "explainVersion": "1",
+  "queryPlanner": {
+    "namespace": "Practica1.inspections",
+    "parsedQuery": {
+      "date": {
+        "$eq": "Dec 26 2023"
+      }
+    },
+    "indexFilterSet": false,
+    "queryHash": "E13CBF47",
+    "planCacheShapeHash": "E13CBF47",
+    "planCacheKey": "076EB4CC",
+    "optimizationTimeMillis": 0,
+    "maxIndexedOrSolutionsReached": false,
+    "maxIndexedAndSolutionsReached": false,
+    "maxScansToExplodeReached": false,
+    "prunedSimilarIndexes": false,
+    "winningPlan": {
+      "isCached": false,
+      "stage": "FETCH",
+      "inputStage": {
+        "stage": "IXSCAN",
+        "keyPattern": {
+          "date": 1
+        },
+        "indexName": "date_1",
+        "isMultiKey": false,
+        "multiKeyPaths": {
+          "date": []
+        },
+        "isUnique": false,
+        "isSparse": false,
+        "isPartial": false,
+        "indexVersion": 2,
+        "direction": "forward",
+        "indexBounds": {
+          "date": [
+            "[\"Dec 26 2023\", \"Dec 26 2023\"]"
+          ]
+        }
+      }
+    },
+    "rejectedPlans": []
+  },
+  "executionStats": {
+    "executionSuccess": true,
+    "nReturned": 8,
+    "executionTimeMillis": 0,
+    "totalKeysExamined": 8,
+    "totalDocsExamined": 8,
+    "executionStages": {
+      "isCached": false,
+      "stage": "FETCH",
+      "nReturned": 8,
+      "executionTimeMillisEstimate": 0,
+      "works": 9,
+      "advanced": 8,
+      "needTime": 0,
+      "needYield": 0,
+      "saveState": 0,
+      "restoreState": 0,
+      "isEOF": 1,
+      "docsExamined": 8,
+      "alreadyHasObj": 0,
+      "inputStage": {
+        "stage": "IXSCAN",
+        "nReturned": 8,
+        "executionTimeMillisEstimate": 0,
+        "works": 9,
+        "advanced": 8,
+        "needTime": 0,
+        "needYield": 0,
+        "saveState": 0,
+        "restoreState": 0,
+        "isEOF": 1,
+        "keyPattern": {
+          "date": 1
+        },
+        "indexName": "date_1",
+        "isMultiKey": false,
+        "multiKeyPaths": {
+          "date": []
+        },
+        "isUnique": false,
+        "isSparse": false,
+        "isPartial": false,
+        "indexVersion": 2,
+        "direction": "forward",
+        "indexBounds": {
+          "date": [
+            "[\"Dec 26 2023\", \"Dec 26 2023\"]"
+          ]
+        },
+        "keysExamined": 8,
+        "seeks": 1,
+        "dupsTested": 0,
+        "dupsDropped": 0
+      }
+    }
+  },
+  "queryShapeHash": "0095694E07FC9E0D9306F939ABD8A33BBF3DEA45467EDC55D9564BABEC3D56DD",
+  "command": {
+    "find": "inspections",
+    "filter": {
+      "date": "Dec 26 2023"
+    },
+    "$db": "Practica1"
+  },
+  "serverInfo": {
+    "host": "cluster0-shard-00-02.rhk1w.mongodb.net",
+    "port": 27017,
+    "version": "8.0.5",
+    "gitVersion": "cb9e2e5e552ee39dea1e39d7859336456d0c9820"
+  },
+  "serverParameters": {
+    "internalQueryFacetBufferSizeBytes": 104857600,
+    "internalQueryFacetMaxOutputDocSizeBytes": 104857600,
+    "internalLookupStageIntermediateDocumentMaxSizeBytes": 16793600,
+    "internalDocumentSourceGroupMaxMemoryBytes": 104857600,
+    "internalQueryMaxBlockingSortMemoryUsageBytes": 33554432,
+    "internalQueryProhibitBlockingMergeOnMongoS": 0,
+    "internalQueryMaxAddToSetBytes": 104857600,
+    "internalDocumentSourceSetWindowFieldsMaxMemoryBytes": 104857600,
+    "internalQueryFrameworkControl": "trySbeRestricted",
+    "internalQueryPlannerIgnoreIndexWithCollationForRegex": 1
+  },
+  "ok": 1,
+  "$clusterTime": {
+    "clusterTime": {
+      "$timestamp": {
+        "t": 1742318319,
+        "i": 12
+      }
+    },
+    "signature": {
+      "hash": {
+        "$binary": {
+          "base64": "QNuTY8xl2wn+euQ3ojYRGGs5mSA=",
+          "subType": "00"
+        }
+      },
+      "keyId": 7431653835791139000
+    }
+  },
+  "operationTime": {
+    "$timestamp": {
+      "t": 1742318319,
+      "i": 12
+    }
+  }
+}

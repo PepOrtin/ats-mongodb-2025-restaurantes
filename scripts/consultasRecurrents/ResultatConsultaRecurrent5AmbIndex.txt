@@ -1,0 +1,203 @@
+{
+  "explainVersion": "1",
+  "queryPlanner": {
+    "namespace": "Practica1.inspections",
+    "parsedQuery": {
+      "$and": [
+        {
+          "date": {
+            "$eq": "Dec 26 2023"
+          }
+        },
+        {
+          "restaurant_id": {
+            "$eq": "55f14312c7447c3da7051b26"
+          }
+        }
+      ]
+    },
+    "indexFilterSet": false,
+    "queryHash": "1F79D9DC",
+    "planCacheShapeHash": "1F79D9DC",
+    "planCacheKey": "B6C1863D",
+    "optimizationTimeMillis": 0,
+    "maxIndexedOrSolutionsReached": false,
+    "maxIndexedAndSolutionsReached": false,
+    "maxScansToExplodeReached": false,
+    "prunedSimilarIndexes": false,
+    "winningPlan": {
+      "isCached": false,
+      "stage": "FETCH",
+      "inputStage": {
+        "stage": "IXSCAN",
+        "keyPattern": {
+          "restaurant_id": 1,
+          "date": 1
+        },
+        "indexName": "restaurant_id_1_date_1",
+        "isMultiKey": false,
+        "multiKeyPaths": {
+          "restaurant_id": [],
+          "date": []
+        },
+        "isUnique": false,
+        "isSparse": false,
+        "isPartial": false,
+        "indexVersion": 2,
+        "direction": "forward",
+        "indexBounds": {
+          "restaurant_id": [
+            "[\"55f14312c7447c3da7051b26\", \"55f14312c7447c3da7051b26\"]"
+          ],
+          "date": [
+            "[\"Dec 26 2023\", \"Dec 26 2023\"]"
+          ]
+        }
+      }
+    },
+    "rejectedPlans": [
+      {
+        "isCached": false,
+        "stage": "FETCH",
+        "filter": {
+          "restaurant_id": {
+            "$eq": "55f14312c7447c3da7051b26"
+          }
+        },
+        "inputStage": {
+          "stage": "IXSCAN",
+          "keyPattern": {
+            "date": 1
+          },
+          "indexName": "date_1",
+          "isMultiKey": false,
+          "multiKeyPaths": {
+            "date": []
+          },
+          "isUnique": false,
+          "isSparse": false,
+          "isPartial": false,
+          "indexVersion": 2,
+          "direction": "forward",
+          "indexBounds": {
+            "date": [
+              "[\"Dec 26 2023\", \"Dec 26 2023\"]"
+            ]
+          }
+        }
+      }
+    ]
+  },
+  "executionStats": {
+    "executionSuccess": true,
+    "nReturned": 1,
+    "executionTimeMillis": 0,
+    "totalKeysExamined": 1,
+    "totalDocsExamined": 1,
+    "executionStages": {
+      "isCached": false,
+      "stage": "FETCH",
+      "nReturned": 1,
+      "executionTimeMillisEstimate": 0,
+      "works": 3,
+      "advanced": 1,
+      "needTime": 0,
+      "needYield": 0,
+      "saveState": 0,
+      "restoreState": 0,
+      "isEOF": 1,
+      "docsExamined": 1,
+      "alreadyHasObj": 0,
+      "inputStage": {
+        "stage": "IXSCAN",
+        "nReturned": 1,
+        "executionTimeMillisEstimate": 0,
+        "works": 2,
+        "advanced": 1,
+        "needTime": 0,
+        "needYield": 0,
+        "saveState": 0,
+        "restoreState": 0,
+        "isEOF": 1,
+        "keyPattern": {
+          "restaurant_id": 1,
+          "date": 1
+        },
+        "indexName": "restaurant_id_1_date_1",
+        "isMultiKey": false,
+        "multiKeyPaths": {
+          "restaurant_id": [],
+          "date": []
+        },
+        "isUnique": false,
+        "isSparse": false,
+        "isPartial": false,
+        "indexVersion": 2,
+        "direction": "forward",
+        "indexBounds": {
+          "restaurant_id": [
+            "[\"55f14312c7447c3da7051b26\", \"55f14312c7447c3da7051b26\"]"
+          ],
+          "date": [
+            "[\"Dec 26 2023\", \"Dec 26 2023\"]"
+          ]
+        },
+        "keysExamined": 1,
+        "seeks": 1,
+        "dupsTested": 0,
+        "dupsDropped": 0
+      }
+    }
+  },
+  "queryShapeHash": "3C3FE25D05FD3DB7F1EC4164C50BA1A573DC4F0717F6A82EB17210B6E78EDFB2",
+  "command": {
+    "find": "inspections",
+    "filter": {
+      "restaurant_id": "55f14312c7447c3da7051b26",
+      "date": "Dec 26 2023"
+    },
+    "$db": "Practica1"
+  },
+  "serverInfo": {
+    "host": "cluster0-shard-00-02.rhk1w.mongodb.net",
+    "port": 27017,
+    "version": "8.0.5",
+    "gitVersion": "cb9e2e5e552ee39dea1e39d7859336456d0c9820"
+  },
+  "serverParameters": {
+    "internalQueryFacetBufferSizeBytes": 104857600,
+    "internalQueryFacetMaxOutputDocSizeBytes": 104857600,
+    "internalLookupStageIntermediateDocumentMaxSizeBytes": 16793600,
+    "internalDocumentSourceGroupMaxMemoryBytes": 104857600,
+    "internalQueryMaxBlockingSortMemoryUsageBytes": 33554432,
+    "internalQueryProhibitBlockingMergeOnMongoS": 0,
+    "internalQueryMaxAddToSetBytes": 104857600,
+    "internalDocumentSourceSetWindowFieldsMaxMemoryBytes": 104857600,
+    "internalQueryFrameworkControl": "trySbeRestricted",
+    "internalQueryPlannerIgnoreIndexWithCollationForRegex": 1
+  },
+  "ok": 1,
+  "$clusterTime": {
+    "clusterTime": {
+      "$timestamp": {
+        "t": 1742318391,
+        "i": 12
+      }
+    },
+    "signature": {
+      "hash": {
+        "$binary": {
+          "base64": "Mlk0VbuMvoEZZghJOrCWYt7cmVU=",
+          "subType": "00"
+        }
+      },
+      "keyId": 7431653835791139000
+    }
+  },
+  "operationTime": {
+    "$timestamp": {
+      "t": 1742318391,
+      "i": 12
+    }
+  }
+}
