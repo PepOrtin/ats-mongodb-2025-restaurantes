@@ -1,0 +1,96 @@
+{
+  "explainVersion": "1",
+  "queryPlanner": {
+    "namespace": "Pràctica1.restaurants",
+    "parsedQuery": {
+      "address line 2": {
+        "$eq": "London"
+      }
+    },
+    "indexFilterSet": false,
+    "queryHash": "871C9539",
+    "planCacheShapeHash": "871C9539",
+    "planCacheKey": "4123C6B1",
+    "optimizationTimeMillis": 0,
+    "maxIndexedOrSolutionsReached": false,
+    "maxIndexedAndSolutionsReached": false,
+    "maxScansToExplodeReached": false,
+    "prunedSimilarIndexes": false,
+    "winningPlan": {
+      "isCached": false,
+      "stage": "FETCH",
+      "inputStage": {
+        "stage": "IXSCAN",
+        "keyPattern": {
+          "address line 2": 1
+        },
+        "indexName": "address line 2_1",
+        "isMultiKey": false,
+        "multiKeyPaths": {
+          "address line 2": []
+        },
+        "isUnique": false,
+        "isSparse": false,
+        "isPartial": false,
+        "indexVersion": 2,
+        "direction": "forward",
+        "indexBounds": {
+          "address line 2": [
+            "[\"London\", \"London\"]"
+          ]
+        }
+      }
+    },
+    "rejectedPlans": []
+  },
+  "queryShapeHash": "43C10AB243919906BBED67B9E478CA91DB2B57E2E779416670E3D447690E4B95",
+  "command": {
+    "find": "restaurants",
+    "filter": {
+      "address line 2": "London"
+    },
+    "$db": "Pràctica1"
+  },
+  "serverInfo": {
+    "host": "cluster0-shard-00-02.zs8pb.mongodb.net",
+    "port": 27017,
+    "version": "8.0.5",
+    "gitVersion": "cb9e2e5e552ee39dea1e39d7859336456d0c9820"
+  },
+  "serverParameters": {
+    "internalQueryFacetBufferSizeBytes": 104857600,
+    "internalQueryFacetMaxOutputDocSizeBytes": 104857600,
+    "internalLookupStageIntermediateDocumentMaxSizeBytes": 16793600,
+    "internalDocumentSourceGroupMaxMemoryBytes": 104857600,
+    "internalQueryMaxBlockingSortMemoryUsageBytes": 33554432,
+    "internalQueryProhibitBlockingMergeOnMongoS": 0,
+    "internalQueryMaxAddToSetBytes": 104857600,
+    "internalDocumentSourceSetWindowFieldsMaxMemoryBytes": 104857600,
+    "internalQueryFrameworkControl": "trySbeRestricted",
+    "internalQueryPlannerIgnoreIndexWithCollationForRegex": 1
+  },
+  "ok": 1,
+  "$clusterTime": {
+    "clusterTime": {
+      "$timestamp": {
+        "t": 1742313217,
+        "i": 5
+      }
+    },
+    "signature": {
+      "hash": {
+        "$binary": {
+          "base64": "xFwQ6jFAj9yLrB/w+8mee/fcr7o=",
+          "subType": "00"
+        }
+      },
+      "keyId": 7431624385200390000
+    }
+  },
+  "operationTime": {
+    "$timestamp": {
+      "t": 1742313217,
+      "i": 5
+    }
+  }
+}

@@ -1,0 +1,144 @@
+{
+  "explainVersion": "1",
+  "queryPlanner": {
+    "namespace": "Pràctica1.restaurants",
+    "parsedQuery": {
+      "$and": [
+        {
+          "type_of_food": {
+            "$eq": "African"
+          }
+        },
+        {
+          "rating": {
+            "$gte": 5
+          }
+        }
+      ]
+    },
+    "indexFilterSet": false,
+    "queryHash": "72CE9137",
+    "planCacheShapeHash": "72CE9137",
+    "planCacheKey": "936A10A8",
+    "optimizationTimeMillis": 0,
+    "maxIndexedOrSolutionsReached": false,
+    "maxIndexedAndSolutionsReached": false,
+    "maxScansToExplodeReached": false,
+    "prunedSimilarIndexes": false,
+    "winningPlan": {
+      "isCached": false,
+      "stage": "FETCH",
+      "inputStage": {
+        "stage": "IXSCAN",
+        "keyPattern": {
+          "type_of_food": 1,
+          "rating": 1
+        },
+        "indexName": "type_of_food_1_rating_1",
+        "isMultiKey": false,
+        "multiKeyPaths": {
+          "type_of_food": [],
+          "rating": []
+        },
+        "isUnique": false,
+        "isSparse": false,
+        "isPartial": false,
+        "indexVersion": 2,
+        "direction": "forward",
+        "indexBounds": {
+          "type_of_food": [
+            "[\"African\", \"African\"]"
+          ],
+          "rating": [
+            "[5, inf.0]"
+          ]
+        }
+      }
+    },
+    "rejectedPlans": [
+      {
+        "isCached": false,
+        "stage": "FETCH",
+        "filter": {
+          "rating": {
+            "$gte": 5
+          }
+        },
+        "inputStage": {
+          "stage": "IXSCAN",
+          "keyPattern": {
+            "type_of_food": 1
+          },
+          "indexName": "type_of_food_1",
+          "isMultiKey": false,
+          "multiKeyPaths": {
+            "type_of_food": []
+          },
+          "isUnique": false,
+          "isSparse": false,
+          "isPartial": false,
+          "indexVersion": 2,
+          "direction": "forward",
+          "indexBounds": {
+            "type_of_food": [
+              "[\"African\", \"African\"]"
+            ]
+          }
+        }
+      }
+    ]
+  },
+  "queryShapeHash": "77FDC5859FC25747F7ACFCA5079833AAD5508771BB610B8F148A3F951F6E44A1",
+  "command": {
+    "find": "restaurants",
+    "filter": {
+      "type_of_food": "African",
+      "rating": {
+        "$gte": 5
+      }
+    },
+    "$db": "Pràctica1"
+  },
+  "serverInfo": {
+    "host": "cluster0-shard-00-02.zs8pb.mongodb.net",
+    "port": 27017,
+    "version": "8.0.5",
+    "gitVersion": "cb9e2e5e552ee39dea1e39d7859336456d0c9820"
+  },
+  "serverParameters": {
+    "internalQueryFacetBufferSizeBytes": 104857600,
+    "internalQueryFacetMaxOutputDocSizeBytes": 104857600,
+    "internalLookupStageIntermediateDocumentMaxSizeBytes": 16793600,
+    "internalDocumentSourceGroupMaxMemoryBytes": 104857600,
+    "internalQueryMaxBlockingSortMemoryUsageBytes": 33554432,
+    "internalQueryProhibitBlockingMergeOnMongoS": 0,
+    "internalQueryMaxAddToSetBytes": 104857600,
+    "internalDocumentSourceSetWindowFieldsMaxMemoryBytes": 104857600,
+    "internalQueryFrameworkControl": "trySbeRestricted",
+    "internalQueryPlannerIgnoreIndexWithCollationForRegex": 1
+  },
+  "ok": 1,
+  "$clusterTime": {
+    "clusterTime": {
+      "$timestamp": {
+        "t": 1742313429,
+        "i": 1
+      }
+    },
+    "signature": {
+      "hash": {
+        "$binary": {
+          "base64": "XOEIWJUX4UMUvxYpgyFXIfLhs7w=",
+          "subType": "00"
+        }
+      },
+      "keyId": 7431624385200390000
+    }
+  },
+  "operationTime": {
+    "$timestamp": {
+      "t": 1742313429,
+      "i": 1
+    }
+  }
+}
