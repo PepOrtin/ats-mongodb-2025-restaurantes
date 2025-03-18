@@ -3,14 +3,14 @@
   "queryPlanner": {
     "namespace": "Pràctica1.restaurants",
     "parsedQuery": {
-      "address line 2": {
-        "$eq": "London"
+      "type_of_food": {
+        "$eq": "African"
       }
     },
     "indexFilterSet": false,
-    "queryHash": "871C9539",
-    "planCacheShapeHash": "871C9539",
-    "planCacheKey": "4123C6B1",
+    "queryHash": "94EFB6D0",
+    "planCacheShapeHash": "94EFB6D0",
+    "planCacheKey": "3B535C6D",
     "optimizationTimeMillis": 0,
     "maxIndexedOrSolutionsReached": false,
     "maxIndexedAndSolutionsReached": false,
@@ -22,12 +22,12 @@
       "inputStage": {
         "stage": "IXSCAN",
         "keyPattern": {
-          "address line 2": 1
+          "type_of_food": 1
         },
-        "indexName": "address line 2_1",
+        "indexName": "type_of_food_1",
         "isMultiKey": false,
         "multiKeyPaths": {
-          "address line 2": []
+          "type_of_food": []
         },
         "isUnique": false,
         "isSparse": false,
@@ -35,19 +35,19 @@
         "indexVersion": 2,
         "direction": "forward",
         "indexBounds": {
-          "address line 2": [
-            "[\"London\", \"London\"]"
+          "type_of_food": [
+            "[\"African\", \"African\"]"
           ]
         }
       }
     },
     "rejectedPlans": []
   },
-  "queryShapeHash": "43C10AB243919906BBED67B9E478CA91DB2B57E2E779416670E3D447690E4B95",
+  "queryShapeHash": "75FC0E73877361D23E805AF440BACE3F797E669F52510586155A04E5C4C779F9",
   "command": {
     "find": "restaurants",
     "filter": {
-      "address line 2": "London"
+      "type_of_food": "African"
     },
     "$db": "Pràctica1"
   },
@@ -73,14 +73,14 @@
   "$clusterTime": {
     "clusterTime": {
       "$timestamp": {
-        "t": 1742313217,
-        "i": 5
+        "t": 1742313345,
+        "i": 4
       }
     },
     "signature": {
       "hash": {
         "$binary": {
-          "base64": "xFwQ6jFAj9yLrB/w+8mee/fcr7o=",
+          "base64": "AkQ+LucRvJkHhWDDDqVS6xf83Gc=",
           "subType": "00"
         }
       },
@@ -89,8 +89,8 @@
   },
   "operationTime": {
     "$timestamp": {
-      "t": 1742313217,
-      "i": 5
+      "t": 1742313345,
+      "i": 4
     }
   }
 }
