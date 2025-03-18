@@ -3,23 +3,14 @@
   "queryPlanner": {
     "namespace": "Pràctica1.restaurants",
     "parsedQuery": {
-      "$and": [
-        {
-          "type_of_food": {
-            "$eq": "African"
-          }
-        },
-        {
-          "rating": {
-            "$gte": 5
-          }
-        }
-      ]
+      "type_of_food": {
+        "$eq": "African"
+      }
     },
     "indexFilterSet": false,
-    "queryHash": "72CE9137",
-    "planCacheShapeHash": "72CE9137",
-    "planCacheKey": "C8DCCABB",
+    "queryHash": "94EFB6D0",
+    "planCacheShapeHash": "94EFB6D0",
+    "planCacheKey": "036C0226",
     "optimizationTimeMillis": 0,
     "maxIndexedOrSolutionsReached": false,
     "maxIndexedAndSolutionsReached": false,
@@ -29,31 +20,46 @@
       "isCached": false,
       "stage": "COLLSCAN",
       "filter": {
-        "$and": [
-          {
-            "type_of_food": {
-              "$eq": "African"
-            }
-          },
-          {
-            "rating": {
-              "$gte": 5
-            }
-          }
-        ]
+        "type_of_food": {
+          "$eq": "African"
+        }
       },
       "direction": "forward"
     },
     "rejectedPlans": []
   },
-  "queryShapeHash": "77FDC5859FC25747F7ACFCA5079833AAD5508771BB610B8F148A3F951F6E44A1",
+  "executionStats": {
+    "executionSuccess": true,
+    "nReturned": 25,
+    "executionTimeMillis": 1,
+    "totalKeysExamined": 0,
+    "totalDocsExamined": 2548,
+    "executionStages": {
+      "isCached": false,
+      "stage": "COLLSCAN",
+      "filter": {
+        "type_of_food": {
+          "$eq": "African"
+        }
+      },
+      "nReturned": 25,
+      "executionTimeMillisEstimate": 0,
+      "works": 2549,
+      "advanced": 25,
+      "needTime": 2523,
+      "needYield": 0,
+      "saveState": 0,
+      "restoreState": 0,
+      "isEOF": 1,
+      "direction": "forward",
+      "docsExamined": 2548
+    }
+  },
+  "queryShapeHash": "75FC0E73877361D23E805AF440BACE3F797E669F52510586155A04E5C4C779F9",
   "command": {
     "find": "restaurants",
     "filter": {
-      "type_of_food": "African",
-      "rating": {
-        "$gte": 5
-      }
+      "type_of_food": "African"
     },
     "$db": "Pràctica1"
   },
@@ -79,14 +85,14 @@
   "$clusterTime": {
     "clusterTime": {
       "$timestamp": {
-        "t": 1742311964,
-        "i": 5
+        "t": 1742315399,
+        "i": 1
       }
     },
     "signature": {
       "hash": {
         "$binary": {
-          "base64": "q4FWAYRbCYU7cXTjyXaeze1r544=",
+          "base64": "olYWNA/P6YbF7ABRtj1jduCBHiw=",
           "subType": "00"
         }
       },
@@ -95,8 +101,8 @@
   },
   "operationTime": {
     "$timestamp": {
-      "t": 1742311964,
-      "i": 5
+      "t": 1742315399,
+      "i": 1
     }
   }
 }

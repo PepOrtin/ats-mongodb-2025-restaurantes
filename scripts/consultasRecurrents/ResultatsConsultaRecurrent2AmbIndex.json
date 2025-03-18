@@ -43,6 +43,62 @@
     },
     "rejectedPlans": []
   },
+  "executionStats": {
+    "executionSuccess": true,
+    "nReturned": 345,
+    "executionTimeMillis": 0,
+    "totalKeysExamined": 345,
+    "totalDocsExamined": 345,
+    "executionStages": {
+      "isCached": false,
+      "stage": "FETCH",
+      "nReturned": 345,
+      "executionTimeMillisEstimate": 0,
+      "works": 346,
+      "advanced": 345,
+      "needTime": 0,
+      "needYield": 0,
+      "saveState": 0,
+      "restoreState": 0,
+      "isEOF": 1,
+      "docsExamined": 345,
+      "alreadyHasObj": 0,
+      "inputStage": {
+        "stage": "IXSCAN",
+        "nReturned": 345,
+        "executionTimeMillisEstimate": 0,
+        "works": 346,
+        "advanced": 345,
+        "needTime": 0,
+        "needYield": 0,
+        "saveState": 0,
+        "restoreState": 0,
+        "isEOF": 1,
+        "keyPattern": {
+          "address line 2": 1
+        },
+        "indexName": "address line 2_1",
+        "isMultiKey": false,
+        "multiKeyPaths": {
+          "address line 2": []
+        },
+        "isUnique": false,
+        "isSparse": false,
+        "isPartial": false,
+        "indexVersion": 2,
+        "direction": "forward",
+        "indexBounds": {
+          "address line 2": [
+            "[\"London\", \"London\"]"
+          ]
+        },
+        "keysExamined": 345,
+        "seeks": 1,
+        "dupsTested": 0,
+        "dupsDropped": 0
+      }
+    }
+  },
   "queryShapeHash": "43C10AB243919906BBED67B9E478CA91DB2B57E2E779416670E3D447690E4B95",
   "command": {
     "find": "restaurants",
@@ -73,14 +129,14 @@
   "$clusterTime": {
     "clusterTime": {
       "$timestamp": {
-        "t": 1742313217,
-        "i": 5
+        "t": 1742315640,
+        "i": 3
       }
     },
     "signature": {
       "hash": {
         "$binary": {
-          "base64": "xFwQ6jFAj9yLrB/w+8mee/fcr7o=",
+          "base64": "erumkM0IZyw7xIxCoQrxjdKfux4=",
           "subType": "00"
         }
       },
@@ -89,8 +145,8 @@
   },
   "operationTime": {
     "$timestamp": {
-      "t": 1742313217,
-      "i": 5
+      "t": 1742315640,
+      "i": 3
     }
   }
 }

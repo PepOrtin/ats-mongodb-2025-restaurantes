@@ -3,14 +3,14 @@
   "queryPlanner": {
     "namespace": "Pràctica1.restaurants",
     "parsedQuery": {
-      "address line ": {
+      "address line 2": {
         "$eq": "London"
       }
     },
     "indexFilterSet": false,
-    "queryHash": "F857D1A8",
-    "planCacheShapeHash": "F857D1A8",
-    "planCacheKey": "654D58D8",
+    "queryHash": "871C9539",
+    "planCacheShapeHash": "871C9539",
+    "planCacheKey": "4123C6B1",
     "optimizationTimeMillis": 0,
     "maxIndexedOrSolutionsReached": false,
     "maxIndexedAndSolutionsReached": false,
@@ -20,7 +20,7 @@
       "isCached": false,
       "stage": "COLLSCAN",
       "filter": {
-        "address line ": {
+        "address line 2": {
           "$eq": "London"
         }
       },
@@ -28,11 +28,38 @@
     },
     "rejectedPlans": []
   },
-  "queryShapeHash": "1CFD19DC099E9D18B4F8C69AA277ECEF1DF87C04692C6212ECF7A417EA9DBC55",
+  "executionStats": {
+    "executionSuccess": true,
+    "nReturned": 345,
+    "executionTimeMillis": 1,
+    "totalKeysExamined": 0,
+    "totalDocsExamined": 2548,
+    "executionStages": {
+      "isCached": false,
+      "stage": "COLLSCAN",
+      "filter": {
+        "address line 2": {
+          "$eq": "London"
+        }
+      },
+      "nReturned": 345,
+      "executionTimeMillisEstimate": 0,
+      "works": 2549,
+      "advanced": 345,
+      "needTime": 2203,
+      "needYield": 0,
+      "saveState": 0,
+      "restoreState": 0,
+      "isEOF": 1,
+      "direction": "forward",
+      "docsExamined": 2548
+    }
+  },
+  "queryShapeHash": "43C10AB243919906BBED67B9E478CA91DB2B57E2E779416670E3D447690E4B95",
   "command": {
     "find": "restaurants",
     "filter": {
-      "address line ": "London"
+      "address line 2": "London"
     },
     "$db": "Pràctica1"
   },
@@ -58,14 +85,14 @@
   "$clusterTime": {
     "clusterTime": {
       "$timestamp": {
-        "t": 1742311866,
+        "t": 1742315469,
         "i": 3
       }
     },
     "signature": {
       "hash": {
         "$binary": {
-          "base64": "d4rwbbH/X96P4hjZDDM/czjFmNg=",
+          "base64": "D/bSwJljI2hlKLw9EkUKofVOoro=",
           "subType": "00"
         }
       },
@@ -74,7 +101,7 @@
   },
   "operationTime": {
     "$timestamp": {
-      "t": 1742311866,
+      "t": 1742315469,
       "i": 3
     }
   }
