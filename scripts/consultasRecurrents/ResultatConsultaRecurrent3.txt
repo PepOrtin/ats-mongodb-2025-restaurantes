@@ -1,0 +1,102 @@
+{
+  "explainVersion": "1",
+  "queryPlanner": {
+    "namespace": "Pràctica1.restaurants",
+    "parsedQuery": {
+      "$and": [
+        {
+          "type_of_food": {
+            "$eq": "African"
+          }
+        },
+        {
+          "rating": {
+            "$gte": 5
+          }
+        }
+      ]
+    },
+    "indexFilterSet": false,
+    "queryHash": "72CE9137",
+    "planCacheShapeHash": "72CE9137",
+    "planCacheKey": "C8DCCABB",
+    "optimizationTimeMillis": 0,
+    "maxIndexedOrSolutionsReached": false,
+    "maxIndexedAndSolutionsReached": false,
+    "maxScansToExplodeReached": false,
+    "prunedSimilarIndexes": false,
+    "winningPlan": {
+      "isCached": false,
+      "stage": "COLLSCAN",
+      "filter": {
+        "$and": [
+          {
+            "type_of_food": {
+              "$eq": "African"
+            }
+          },
+          {
+            "rating": {
+              "$gte": 5
+            }
+          }
+        ]
+      },
+      "direction": "forward"
+    },
+    "rejectedPlans": []
+  },
+  "queryShapeHash": "77FDC5859FC25747F7ACFCA5079833AAD5508771BB610B8F148A3F951F6E44A1",
+  "command": {
+    "find": "restaurants",
+    "filter": {
+      "type_of_food": "African",
+      "rating": {
+        "$gte": 5
+      }
+    },
+    "$db": "Pràctica1"
+  },
+  "serverInfo": {
+    "host": "cluster0-shard-00-02.zs8pb.mongodb.net",
+    "port": 27017,
+    "version": "8.0.5",
+    "gitVersion": "cb9e2e5e552ee39dea1e39d7859336456d0c9820"
+  },
+  "serverParameters": {
+    "internalQueryFacetBufferSizeBytes": 104857600,
+    "internalQueryFacetMaxOutputDocSizeBytes": 104857600,
+    "internalLookupStageIntermediateDocumentMaxSizeBytes": 16793600,
+    "internalDocumentSourceGroupMaxMemoryBytes": 104857600,
+    "internalQueryMaxBlockingSortMemoryUsageBytes": 33554432,
+    "internalQueryProhibitBlockingMergeOnMongoS": 0,
+    "internalQueryMaxAddToSetBytes": 104857600,
+    "internalDocumentSourceSetWindowFieldsMaxMemoryBytes": 104857600,
+    "internalQueryFrameworkControl": "trySbeRestricted",
+    "internalQueryPlannerIgnoreIndexWithCollationForRegex": 1
+  },
+  "ok": 1,
+  "$clusterTime": {
+    "clusterTime": {
+      "$timestamp": {
+        "t": 1742311964,
+        "i": 5
+      }
+    },
+    "signature": {
+      "hash": {
+        "$binary": {
+          "base64": "q4FWAYRbCYU7cXTjyXaeze1r544=",
+          "subType": "00"
+        }
+      },
+      "keyId": 7431624385200390000
+    }
+  },
+  "operationTime": {
+    "$timestamp": {
+      "t": 1742311964,
+      "i": 5
+    }
+  }
+}

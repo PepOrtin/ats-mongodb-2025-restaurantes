@@ -1,0 +1,81 @@
+{
+  "explainVersion": "1",
+  "queryPlanner": {
+    "namespace": "Pràctica1.restaurants",
+    "parsedQuery": {
+      "type_of_food": {
+        "$eq": "African"
+      }
+    },
+    "indexFilterSet": false,
+    "queryHash": "94EFB6D0",
+    "planCacheShapeHash": "94EFB6D0",
+    "planCacheKey": "AD5FD070",
+    "optimizationTimeMillis": 0,
+    "maxIndexedOrSolutionsReached": false,
+    "maxIndexedAndSolutionsReached": false,
+    "maxScansToExplodeReached": false,
+    "prunedSimilarIndexes": false,
+    "winningPlan": {
+      "isCached": false,
+      "stage": "COLLSCAN",
+      "filter": {
+        "type_of_food": {
+          "$eq": "African"
+        }
+      },
+      "direction": "forward"
+    },
+    "rejectedPlans": []
+  },
+  "queryShapeHash": "75FC0E73877361D23E805AF440BACE3F797E669F52510586155A04E5C4C779F9",
+  "command": {
+    "find": "restaurants",
+    "filter": {
+      "type_of_food": "African"
+    },
+    "$db": "Pràctica1"
+  },
+  "serverInfo": {
+    "host": "cluster0-shard-00-02.zs8pb.mongodb.net",
+    "port": 27017,
+    "version": "8.0.5",
+    "gitVersion": "cb9e2e5e552ee39dea1e39d7859336456d0c9820"
+  },
+  "serverParameters": {
+    "internalQueryFacetBufferSizeBytes": 104857600,
+    "internalQueryFacetMaxOutputDocSizeBytes": 104857600,
+    "internalLookupStageIntermediateDocumentMaxSizeBytes": 16793600,
+    "internalDocumentSourceGroupMaxMemoryBytes": 104857600,
+    "internalQueryMaxBlockingSortMemoryUsageBytes": 33554432,
+    "internalQueryProhibitBlockingMergeOnMongoS": 0,
+    "internalQueryMaxAddToSetBytes": 104857600,
+    "internalDocumentSourceSetWindowFieldsMaxMemoryBytes": 104857600,
+    "internalQueryFrameworkControl": "trySbeRestricted",
+    "internalQueryPlannerIgnoreIndexWithCollationForRegex": 1
+  },
+  "ok": 1,
+  "$clusterTime": {
+    "clusterTime": {
+      "$timestamp": {
+        "t": 1742311284,
+        "i": 5
+      }
+    },
+    "signature": {
+      "hash": {
+        "$binary": {
+          "base64": "Y0QtlOJNgnL8tNllWyb4hsW76ss=",
+          "subType": "00"
+        }
+      },
+      "keyId": 7431624385200390000
+    }
+  },
+  "operationTime": {
+    "$timestamp": {
+      "t": 1742311284,
+      "i": 5
+    }
+  }
+}

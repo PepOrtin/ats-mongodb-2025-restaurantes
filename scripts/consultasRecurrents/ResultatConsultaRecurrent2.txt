@@ -1,0 +1,81 @@
+{
+  "explainVersion": "1",
+  "queryPlanner": {
+    "namespace": "Pràctica1.restaurants",
+    "parsedQuery": {
+      "address line ": {
+        "$eq": "London"
+      }
+    },
+    "indexFilterSet": false,
+    "queryHash": "F857D1A8",
+    "planCacheShapeHash": "F857D1A8",
+    "planCacheKey": "654D58D8",
+    "optimizationTimeMillis": 0,
+    "maxIndexedOrSolutionsReached": false,
+    "maxIndexedAndSolutionsReached": false,
+    "maxScansToExplodeReached": false,
+    "prunedSimilarIndexes": false,
+    "winningPlan": {
+      "isCached": false,
+      "stage": "COLLSCAN",
+      "filter": {
+        "address line ": {
+          "$eq": "London"
+        }
+      },
+      "direction": "forward"
+    },
+    "rejectedPlans": []
+  },
+  "queryShapeHash": "1CFD19DC099E9D18B4F8C69AA277ECEF1DF87C04692C6212ECF7A417EA9DBC55",
+  "command": {
+    "find": "restaurants",
+    "filter": {
+      "address line ": "London"
+    },
+    "$db": "Pràctica1"
+  },
+  "serverInfo": {
+    "host": "cluster0-shard-00-02.zs8pb.mongodb.net",
+    "port": 27017,
+    "version": "8.0.5",
+    "gitVersion": "cb9e2e5e552ee39dea1e39d7859336456d0c9820"
+  },
+  "serverParameters": {
+    "internalQueryFacetBufferSizeBytes": 104857600,
+    "internalQueryFacetMaxOutputDocSizeBytes": 104857600,
+    "internalLookupStageIntermediateDocumentMaxSizeBytes": 16793600,
+    "internalDocumentSourceGroupMaxMemoryBytes": 104857600,
+    "internalQueryMaxBlockingSortMemoryUsageBytes": 33554432,
+    "internalQueryProhibitBlockingMergeOnMongoS": 0,
+    "internalQueryMaxAddToSetBytes": 104857600,
+    "internalDocumentSourceSetWindowFieldsMaxMemoryBytes": 104857600,
+    "internalQueryFrameworkControl": "trySbeRestricted",
+    "internalQueryPlannerIgnoreIndexWithCollationForRegex": 1
+  },
+  "ok": 1,
+  "$clusterTime": {
+    "clusterTime": {
+      "$timestamp": {
+        "t": 1742311866,
+        "i": 3
+      }
+    },
+    "signature": {
+      "hash": {
+        "$binary": {
+          "base64": "d4rwbbH/X96P4hjZDDM/czjFmNg=",
+          "subType": "00"
+        }
+      },
+      "keyId": 7431624385200390000
+    }
+  },
+  "operationTime": {
+    "$timestamp": {
+      "t": 1742311866,
+      "i": 3
+    }
+  }
+}
